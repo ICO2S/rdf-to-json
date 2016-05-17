@@ -1,0 +1,51 @@
+{
+    "types": [
+        {
+            "name": "ComponentDefinition",
+            "uri": "http://sbols.org/v2#ComponentDefinition",
+            "properties": [
+                {
+                    "type": "string",
+                    "name": "title",
+                    "predicate": "http://purl.org/dc/terms/title"
+                },
+                {
+                    "type": "string",
+                    "name": "displayId",
+                    "predicate": "http://sbols.org/v2#displayId"
+                },
+                {
+                    "type": "Component[]",
+                    "name": "component",
+                    "predicate": "http://sbols.org/v2#component",
+                    "composition": "compose"
+                }
+            ]
+        },
+        {
+            "name": "Component",
+            "uri": "http://sbols.org/v2#Component",
+            "properties": [
+                {
+                    "type": "ComponentDefinition",
+                    "name": "definition",
+                    "predicate": "http://sbols.org/v2#definition",
+                    "composition": "aggregate"
+                }
+            ]
+        },
+        {
+            "name": "Sequence",
+            "uri": "http://sbols.org/v2#Sequence",
+            "properties": [
+                {
+                    "type": "string",
+                    "name": "elements",
+                    "predicate": "http://sbols.org/v2#elements"
+                }
+            ]
+        }
+    ]
+
+}
+

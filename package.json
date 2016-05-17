@@ -1,0 +1,16 @@
+{
+  "name": "rdf-to-json",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Alastair McLaughlin <j.a.mclaughlin@ncl.ac.uk>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "async": "^1.5.2",
+    "rdf-ext": "^0.3.0",
+    "rdf-parser-rdfxml": "^0.3.1"
+  }
+}
